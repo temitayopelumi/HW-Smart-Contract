@@ -7,7 +7,12 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "get",
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "getMessage",
 				"outputs": [
 					{
 						"internalType": "string",
@@ -15,7 +20,20 @@
 						"type": "string"
 					}
 				],
-				"stateMutability": "pure",
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_message",
+						"type": "string"
+					}
+				],
+				"name": "setMessage",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -47,11 +65,11 @@
 	},
 	"sources": {
 		"HelloWorld.sol": {
-			"keccak256": "0xb1e4baa891791966012bcb221a75d514a4b3c89874cedd9d59bf74a0864fb464",
+			"keccak256": "0x73475c83b456bddd3aa7b34395e7165e218dab95edc5f726e66b314108f96cb8",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://77584e9deaa555a895bc797170f7bcd3fde0e80b0d12b8045ca699f0709ac7aa",
-				"dweb:/ipfs/QmQ71kJ3z6A189qQ5tWLzThth1o6QFJ2bivU8CM6deJshz"
+				"bzz-raw://80a3a45dad10c2b193db3cc16d85c4ea6a1607816ea62be94397189a7ac334d2",
+				"dweb:/ipfs/QmYy6bMpDA4dZoTX9DgPdNXg5iLCn8HJvvUW1JdZ23J3vJ"
 			]
 		}
 	},
